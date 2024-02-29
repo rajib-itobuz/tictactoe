@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    margin-block: 20px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .item {
+        border: 1px dashed grey;
+        font-size: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.resetButton {
+    background-color: #fb8500;
+    padding: 10px 50px;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+.output {
+    font-size: 30px;
+}
